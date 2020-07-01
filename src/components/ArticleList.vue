@@ -1,13 +1,13 @@
 <template>
 	<div>
-    <ul>
-      <li v-for="article in articleList" :key="article.id">
-        id: {{ article.id }}
-        title: {{ article.title }}
-      </li>
-    </ul>
-
-    {{ info }}
+        <ul>
+          <li v-for="article in articleList" :key="article.id">
+            id: {{ article.id }}
+            title: {{ article.title }}
+          </li>
+        </ul>
+    
+        {{ info }}
 	</div>
 </template>
 
