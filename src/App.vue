@@ -19,7 +19,7 @@ export default {
   components: {
     Header,
     ArticleList,
-    Users
+    Users,
     DepartmentList
   },
   data() {
