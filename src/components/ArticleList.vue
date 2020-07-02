@@ -1,16 +1,15 @@
 <template>
     <div>
         <ul>
-            <li v-for="article in articles" :key="article.id">
-                id: {{ article.id }}
-                title: {{ article.title }}
-            </li>
+            <article-item v-for="article in articles" 
+                :item="article" :key="article.id" />
         </ul>
     </div>
 </template>
 
 <script>
 import axios from 'axios'
+import ArticleItem from './ArticleItem.vue'
 
 export default {
 	name: 'ArticleList',
@@ -23,6 +22,9 @@ export default {
           hogeMethod() {
               console.log('called hogeMethod in ArticleList Component')
           }
+    },
+    components: {
+        ArticleItem
     },
     mounted () {
         axios
