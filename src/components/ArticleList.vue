@@ -1,14 +1,12 @@
 <template>
-	<div>
+    <div>
         <ul>
-          <li v-for="article in articleList" :key="article.id">
-            id: {{ article.id }}
-            title: {{ article.title }}
-          </li>
+            <li v-for="article in articleList" :key="article.id">
+                id: {{ article.id }}
+                title: {{ article.title }}
+            </li>
         </ul>
-    
-        {{ info }}
-	</div>
+    </div>
 </template>
 
 <script>
@@ -18,21 +16,7 @@ export default {
 	name: 'ArticleList',
 	data() {
 		return {
-			articleList: [
-				{
-					id: 1,
-					title: 'article title 1'
-				},
-				{
-					id: 2,
-					title: 'article title 2'
-				},
-				{
-					id: 3,
-					title: 'article title 3'
-				}
-      ],
-      info: null
+			articleList: null
     }
 	},
   method: {
@@ -42,8 +26,10 @@ export default {
   },
   mounted () {
     axios
-      .get('https://api.coindesk.com/v1/bpi/currentprice.json')
-      .then(response => (this.info = response))
+      .get('http://localhost:3001/articleList')
+      .then(response => {
+        this.articleList = response.data
+      })
   }
 }
 </script>

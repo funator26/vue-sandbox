@@ -1,5 +1,4 @@
 import Vue from 'vue'
-import axios from 'axios' // eslint-disable-line
 import App from './App.vue'
 
 Vue.config.productionTip = false
