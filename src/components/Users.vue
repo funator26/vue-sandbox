@@ -25,7 +25,8 @@ export default {
     },
     mounted() {
         axios
-            .get('http://localhost:3001/users')
+            // .get('http://localhost:3001/users')
+            .get('/spring-boot-aks/users')
             .then(response => {
                 this.users = response.data
             })

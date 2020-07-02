@@ -1,7 +1,7 @@
 <template>
     <div>
         ID: {{ item.id }}, Name: {{ item.name }},
-        Department_id: {{ item.department_id }}, Position: {{ item.potision }}
+        Department_Name: {{ item.department.name }}, Position: {{ item.position }}
     </div>
 </template>
 

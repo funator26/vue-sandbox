@@ -24,7 +24,8 @@ export default {
     },
     mounted() {
         axios
-            .get('http://localhost:3001/departmentList')
+            // .get('http://localhost:3001/departmentList')
+            .get('/spring-boot-aks/departments')
             .then(response => {
                 this.departments = response.data
         })
