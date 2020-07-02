@@ -4,6 +4,7 @@
     Hello {{ name }} !
     <ArticleList />
     <Users />
+    <DepartmentList />
   </div>
 </template>
 
@@ -11,6 +12,7 @@
 import Header from './components/Header.vue'
 import ArticleList from './components/ArticleList.vue'
 import Users from './components/Users.vue'
+import DepartmentList from './components/DepartmentList.vue'
 
 export default {
   name: 'App',
@@ -18,10 +20,11 @@ export default {
     Header,
     ArticleList,
     Users
+    DepartmentList
   },
   data() {
     return {
-      name: 'funato'
+      name: 'Funato'
     }
   }
 }
