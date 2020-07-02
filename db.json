@@ -12,5 +12,56 @@
             "id": 3,
             "title": "article title 3"
         }
+    ],
+    "users": [
+        {
+            "id": 1,
+            "name": "古川",
+            "department_id": 1,
+            "password": "furukawa",
+            "position": "新卒"
+        },
+        {
+            "id": 2,
+            "name": "舟戸",
+            "department_id": 1,
+            "password": "funato",
+            "position": "新卒"
+        },
+        {
+            "id": 3,
+            "name": "堀江",
+            "department_id": 1,
+            "password": "horie",
+            "position": "新卒"
+        },
+        {
+            "id": 4,
+            "name": "宇治",
+            "department_id": 1,
+            "password": "uji",
+            "position": "新卒"
+        },
+        {
+            "id": 5,
+            "name": "喬",
+            "department_id": 1,
+            "password": "qiao",
+            "position": "新卒"
+        },
+        {
+            "id": 6,
+            "name": "孫太郎",
+            "department_id": 2,
+            "password": "taro",
+            "position": "CEO"
+        },
+        {
+            "id": 7,
+            "name": "孫二郎",
+            "department_id": 3,
+            "password": "jiro",
+            "position": "CTO"
+        }
     ]
 }
