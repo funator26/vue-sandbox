@@ -6,11 +6,29 @@
         },
         {
             "id": 2,
-            "title": "article title 2"
+        "title": "article title 2"
         },
         {
             "id": 3,
             "title": "article title 3"
+        }
+    ],
+    "departmentList": [
+        {
+            "id": 100,
+            "name": "IT本部"
+        },
+        {
+            "id": 200,
+            "name": "IT運用本部"
+        },
+        {
+            "id": 300,
+            "name": "経理"
+        },
+        {
+            "id": 400,
+            "name": "営業"
         }
     ]
 }
