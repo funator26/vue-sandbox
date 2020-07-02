@@ -1,7 +1,12 @@
 <template>
     <div>
-        Users
-        {{ users }}
+        Here is Users Components!
+        <ul>
+            <li v-for="user in users" :item="user" :key="user.id" >
+                ID: {{ user.id }}, Name: {{ user.name }},
+                Department_id: {{ user.department_id }}, Password: {{ user.password }}
+            <li/>
+        </ul>
     </div>
 </template>
 
