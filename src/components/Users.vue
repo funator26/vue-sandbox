@@ -3,8 +3,7 @@
         Here is Users Components!
         <ul>
             <li v-for="user in users" :item="user" :key="user.id" >
-                ID: {{ user.id }}, Name: {{ user.name }},
-                Department_id: {{ user.department_id }}, Password: {{ user.password }}
+                <UserItem :item="user" :key="user.id" />
             <li/>
         </ul>
     </div>
@@ -12,6 +11,7 @@
 
 <script>
 import axios from 'axios'
+import UserItem from './UserItem'
 
 export default {
 	name: 'Users',
@@ -19,6 +19,9 @@ export default {
         return {
             users: null
         }
+    },
+    components: {
+        UserItem
     },
     mounted() {
         axios

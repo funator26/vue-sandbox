@@ -28,8 +28,8 @@ export default {
     },
     mounted () {
         axios
-        //   .get('http://localhost:3001/articleList')
-            .get('/spring-boot-aks/articles')
+            .get('http://localhost:3001/articleList')
+            // .get('/spring-boot-aks/articles')
             .then(response => {
                 this.articles = response.data
         })
