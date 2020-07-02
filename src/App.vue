@@ -2,21 +2,20 @@
   <div id="app">
     <Header />
     Hello {{ name }} !
-    <HelloWorld />
+    <ArticleList />
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
 // import ArticleList from './components/ArticleList.vue'
-import HelloWorld from './components/ArticleList.vue'
+import ArticleList from './components/ArticleList.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    // ArticleList
-    HelloWorld
+    ArticleList
   },
   data() {
     return {

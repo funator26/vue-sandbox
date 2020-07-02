@@ -1,7 +1,7 @@
 <template>
     <div>
         <ul>
-            <li v-for="article in articleList" :key="article.id">
+            <li v-for="article in articles" :key="article.id">
                 id: {{ article.id }}
                 title: {{ article.title }}
             </li>
@@ -16,21 +16,22 @@ export default {
 	name: 'ArticleList',
 	data() {
 		return {
-			articleList: null
-    }
+			articles: null
+        }
 	},
-  method: {
-    hogeMethod() {
-      console.log('called hogeMethod in ArticleList Component')
+    method: {
+          hogeMethod() {
+              console.log('called hogeMethod in ArticleList Component')
+          }
+    },
+    mounted () {
+        axios
+        //   .get('http://localhost:3001/articleList')
+            .get('/spring-boot-aks/articles')
+            .then(response => {
+                this.articles = response.data
+        })
     }
-  },
-  mounted () {
-    axios
-      .get('http://localhost:3001/articleList')
-      .then(response => {
-        this.articleList = response.data
-      })
-  }
 }
 </script>
 
