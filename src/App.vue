@@ -3,19 +3,21 @@
     <Header />
     Hello {{ name }} !
     <ArticleList />
+    <DepartmentList />
   </div>
 </template>
 
 <script>
 import Header from './components/Header.vue'
-// import ArticleList from './components/ArticleList.vue'
 import ArticleList from './components/ArticleList.vue'
+import DepartmentList from './components/DepartmentList.vue'
 
 export default {
   name: 'App',
   components: {
     Header,
-    ArticleList
+    ArticleList,
+    DepartmentList
   },
   data() {
     return {
